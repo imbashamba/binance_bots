@@ -21,6 +21,7 @@ candles = {
 
 CANDLE_SIZE = candles[g_candle_size]
 
+RECV_WINDOW=6000000
 
 print("======= Kline/Candlestick Data =======")
 last_date = None
