@@ -59,7 +59,7 @@ while True:
 				except Exception as e:
 					# иногда ордер не срабатывает с первого раза по рандомной причине, пробуем второй раз для надёги
 					print(e)
-					time.sleep(1)
+					time.sleep(5)
 					print('EXCEPTION WHEN MAKING ORDER, TRY NEW ONE')
 					result = request_client.post_order(symbol="BTCUSDT", side=stop_type, ordertype=OrderType.MARKET, quantity=AMOUNT)
 				break
